@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="img/optima.png" />
+    <!--Fonts-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!--Slider-->
+    <link rel="stylesheet" href="css/flickity.min.css">
+    <!--Popup-->
+    <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+    <!--fancybox-->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!--Style-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Media-->
+    <link rel="stylesheet" href="css/media.css">
+    <title>Vologodskiy Plotnik</title>
+</head>
+    <body>
+        <div class="wrapper place">
+            <div class="wrapper__scroll">
+                <header class="wrapper__header header">
+
+                    <a href="" class="header__box-link">
+                        <svg width="40" height="40" role="img" class="header__menu-close">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__logo logo anchor">
+                        <svg width="159" height="167" role="img">
+                            <use xlink:href="img/sprite.svg#logo"></use>
+                        </svg>
+                        <p class="logo__paragraph">
+                            Качество, проверенное поколениями
+                        </p>
+                    </a>
+
+                    <nav class="header__main-nav main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a href="" class="main-nav__link">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="" class="main-nav__link">
+                                    Проекты
+                                </a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="" class="main-nav__link">
+                                    Наши работы
+                                </a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="" class="main-nav__link">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="" class="main-nav__link">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="" class="main-nav__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="#" class="header__burger burger">
+                        <svg width="26" height="22" role="img">
+                            <use xlink:href="img/sprite.svg#icon-burger"></use>
+                        </svg>
+                        <span class="burger__text">
+                            меню
+                        </span>
+                    </a>
+
+                    <div class="header__contacts contacts">
+                        <a href="tel:8 800 2000 679" class="contacts__phone-link">
+                            8 800 2000 679
+                        </a>
+                        <span class="contacts__time">
+                            пн - пт с 9:00 до 18:00
+                        </span>
+                        <a href="#" class="contacts__call-link modal-btn" data-modal="popup-call">
+                            ОБРАТНЫЙ ЗВОНОК
+                        </a>
+                    </div>
+                </header>
+                <aside class="wrapper__aside aside">
+                    <div class="aside__shareIn-network shareIn-network">
+                        <p class="shareIn-network__paragraph">
+                            Поделиться проектом
+                        </p>
+
+                        <ul class="shareIn-network__list-network list-network">
+                            <li class="list-network__item">
+                                <a href="#" class="list-network__link">
+                                    <svg width="35" height="35" role="img">
+                                        <use xlink:href="img/sprite.svg#icon-vk"></use>
+                                    </svg>
+
+                                    <div class="list-network__tooltip">
+                                        1234
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-network__item">
+                                <a href="#" class="list-network__link">
+                                    <svg width="34" height="34" role="img">
+                                        <use xlink:href="img/sprite.svg#icon-odnoclas"></use>
+                                    </svg>
+                                    <div class="list-network__tooltip">
+                                        5555
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-network__item">
+                                <a href="#" class="list-network__link">
+                                    <svg width="34" height="34" role="img">
+                                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                    <div class="list-network__tooltip">
+                                        6666
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="aside__house-parameters house-parameters">
+                        <li class="house-parameters__item">
+                            <svg width="53" height="39" role="img" class="house-parameters__icon">
+                                <use xlink:href="img/sprite.svg#house-size"></use>
+                            </svg>
+                            <p class="house-parameters__paragraph">
+                                Размеры:
+                                <strong>12,0 м х 9,5 м</strong>
+                            </p>
+                        </li>
+
+                        <li class="house-parameters__item">
+                            <svg width="53" height="39" role="img" class="house-parameters__icon">
+                                <use xlink:href="img/sprite.svg#house-square"></use>
+                            </svg>
+                            <p class="house-parameters__paragraph">
+                                Общая площадь:
+                                <strong>153 м2</strong>
+                            </p>
+                        </li>
+
+                        <li class="house-parameters__item">
+                            <svg width="53" height="39" role="img" class="house-parameters__icon">
+                                <use xlink:href="img/sprite.svg#house-floor"></use>
+                            </svg>
+                            <p class="house-parameters__paragraph">
+                                Этажность:
+                                <strong>2 этажа</strong>
+                            </p>
+                        </li>
+
+                        <li class="house-parameters__item">
+                            <svg width="53" height="39" role="img" class="house-parameters__icon">
+                                <use xlink:href="img/sprite.svg#icon-diameter"></use>
+                            </svg>
+                            <p class="house-parameters__paragraph">
+                                Диаметр бревна:
+                                <strong>153 м2</strong>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p class="aside__paragraph">
+                        Цена за домокомплект:
+                        <span class="aside__priсe">
+                        1 200 000 руб.
+                    </span>
+                    </p>
+
+                    <a href="#" onclick="return false" class="aside__main-btn main-btn main-btn--background">
+                        Заказать смету
+                    </a>
+
+                    <p class="aside__paragraph">
+                        Проект «На озере» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков.
+                    </p>
+                </aside>
+            </div>
+
+            <main class="wrapper__main main">
+                <section class="main__project-house project-house">
+                    <div class="project-house__container container">
+                        <nav class="project-house__breadcrumbs breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a href="" class="breadcrumbs__link">
+                                        Главная
+                                    </a>
+                                </li>
+
+                                <li class="breadcrumbs__item">
+                                    <svg width="18" height="5" role="img" class="breadcrumbs__svg">
+                                        <use xlink:href="img/sprite.svg#arrow-left"></use>
+                                    </svg>
+                                    <a href="" class="breadcrumbs__link">
+                                        Проекты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <h1 class="project-house__title title">
+                            Проект дома «На озере»
+                        </h1>
+
+                        <div class="project-house__graphics-house graphics-house">
+                            <div class="graphics-house__slider__project slider__project">
+                                <div class="slider__project__sl-main sl-main">
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic1.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic2.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic3.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic4.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic2.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic3.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic4.png" alt="picture">
+                                    </div>
+                                </div>
+
+                                <div class="slider__project__sl-nav sl-nav">
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic1.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic2.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic3.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic4.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic2.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic3.png" alt="picture">
+                                    </div>
+
+                                    <div class="slider__project__item">
+                                        <img src="img/slider/sl-pic4.png" alt="picture">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graphics-house__picture-layout picture-layout">
+                                <div class="picture-layout__wrapper">
+                                    <span class="picture-layout__mark">
+                                        1 этаж
+                                    </span>
+                                    <a href="img/layout.png" data-fancybox="images" class="picture-layout__link fancybox">
+                                        <img src="img/layout.png" alt="" class="picture-layout__img">
+                                    </a>
+                                </div>
+
+                                <div class="picture-layout__wrapper1">
+                                    <span class="picture-layout__mark">
+                                        2 этаж
+                                    </span>
+                                    <a href="img/layout2.png" data-fancybox="images" class="picture-layout__link fancybox">
+                                        <img src="img/layout2.png" alt="" class="picture-layout__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="graphics-house__wrapper"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="main__equipment equipment">
+                    <div class="equipment__container container">
+                        <div class="equipment__equipment-list equipment-list">
+                            <div class="equipment-list__head">
+                                <svg width="52" height="44" role="img" class="equipment-list__svg">
+                                    <use xlink:href="img/sprite.svg#house-default"></use>
+                                </svg>
+                                <h3 class="equipment-list__title title">
+                                    Комплектация "Базовая" (домокомплект)
+                                </h3>
+                            </div>
+
+                            <ul class="equipment-list__list">
+                                <li class="equipment-list__item">
+                                    Рубленый стеновой комплект сруб в чашу
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Баки половые брус  100 на 200
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    <a href="#" class="equipment-list__dropdown-btn dropdown-btn" data-dropdown="dropdown1">
+                                    Пере... межэтажный брус 150 на 200
+
+                                        <div id="dropdown1" class="dropdown-btn__description">
+                                            <p class="dropdown-btn__paragraph">
+                                                <strong>Подробное описание</strong>
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+
+                                <li class="equipment-list__item">
+                                    <a href="#" class="equipment-list__dropdown-btn dropdown-btn" data-dropdown="dropdown2">
+                                        Межвенцовый утеплитель (...)
+
+                                        <div id="dropdown2" class="dropdown-btn__description">
+                                            <p class="dropdown-btn__paragraph">
+                                                <strong>Подробное описание</strong>
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Стропила
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Обрешетка
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Нигеля березовые
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    <a href="#" class="equipment-list__dropdown-btn dropdown-btn" data-dropdown="dropdown3">
+                                        Рубероид, ... ... кровля
+
+                                        <div id="dropdown3" class="dropdown-btn__description">
+                                            <p class="dropdown-btn__paragraph">
+                                                <strong>Подробное описание</strong>
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Метизы
+                                </li>
+                            </ul>
+
+                            <div class="equipment-list__img">
+                                <img src="img/logs.png" alt="">
+                                <span>
+                                    1 200 000 руб.
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="equipment__equipment-list equipment-list equipment__equipment-list--gap">
+                            <div class="equipment-list__head">
+                                <svg width="52" height="44" role="img" class="equipment-list__svg">
+                                    <use xlink:href="img/sprite.svg#house-default"></use>
+                                </svg>
+                                <h3 class="equipment-list__title title">
+                                    Комплектация "Базовая" (домокомплект)
+                                </h3>
+                            </div>
+
+                            <ul class="equipment-list__list">
+                                <li class="equipment-list__item">
+                                    Укладка межвенцового утеплителя
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Устройство стропильной системы
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    <a href="#" class="equipment-list__dropdown-btn dropdown-btn" data-dropdown="dropdown4">
+                                        Пере... межэтажный брус 150 на 200
+
+                                        <div id="dropdown4" class="dropdown-btn__description">
+                                            <p class="dropdown-btn__paragraph">
+                                                <strong>Подробное описание</strong>
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    <a href="#" class="equipment-list__dropdown-btn dropdown-btn" data-dropdown="dropdown5">
+                                        Межвенцовый утеплитель (...)
+
+                                        <div id="dropdown5" class="dropdown-btn__description">
+                                            <p class="dropdown-btn__paragraph">
+                                                <strong>Подробное описание</strong>
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Стропила
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Обрешетка
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Нигеля березовые
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Сборка  стенового комплекта
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Монтаж балок пола
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    Монтаж межэтажный балок
+                                </li>
+
+                                <li class="equipment-list__item">
+                                    <a href="#" class="equipment-list__dropdown-btn dropdown-btn" data-dropdown="dropdown6">
+                                        Укладка гидро...
+
+                                        <div id="dropdown6" class="dropdown-btn__description">
+                                            <p class="dropdown-btn__paragraph">
+                                                <strong>Подробное описание</strong>
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                                deserunt mollit anim id est laborum."
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="equipment-list__img">
+                                <img src="img/logs2.png" alt="">
+                                <span>
+                                    1 690 000 руб.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main__delivery delivery">
+                    <div class="delivery__container container">
+                        <h2 class="delivery__title title">
+                            Доставка
+                        </h2>
+                        <p class="delivery__paragraph delivery__paragraph--order">
+                            Чтобы  доставить  домокоплект  по данному проекту  необходимо <strong>4 единицы техники</strong>
+                        </p>
+
+                        <div class="delivery__icons-car icons-car">
+                            <svg width="102" height="48" role="img">
+                                <use xlink:href="img/sprite.svg#big-car"></use>
+                            </svg>
+
+                            <svg width="102" height="48" role="img">
+                                <use xlink:href="img/sprite.svg#big-car"></use>
+                            </svg>
+
+                            <svg width="102" height="48" role="img">
+                                <use xlink:href="img/sprite.svg#big-car"></use>
+                            </svg>
+
+                            <svg width="102" height="48" role="img">
+                                <use xlink:href="img/sprite.svg#big-car"></use>
+                            </svg>
+                        </div>
+
+                        <p class="delivery__paragraph">
+                            Стоимость  достави - <strong>80 рублей</strong> за один километр
+                        </p>
+                    </div>
+                </section>
+
+                <section class="main__section-description section-description">
+                    <div class="section-description__container container">
+                        <h2 class="section-description__title title">
+                            Описание проекта
+                        </h2>
+
+                        <p class="section-description__paragraph">
+                            Проект «Волна» - чудесное решение для южных широт нашей страны. Большие площади остекления откроют чудесные виды на живописные пляжи, а террасы создадут непередаваемую атмосферу  для ужинов и завтраков.
+                        </p>
+
+                        <div class="section-description__wrapper">
+                            <div class="section-description__image-comparison" id="image-comparison">
+                                <img src="img/sl-be-left.png" alt="">
+                                <img src="img/slider/sl-pic1.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="main__work-examples work-examples">
+                    <div class="work-examples__container container">
+                        <h2 class="work-examples__title title">
+                            По  даному проекту были построены дома
+                        </h2>
+                        <div class="work-examples__wrapper">
+                            <div class="work-examples__document-wrapper">
+                                <div class="house-document">
+                                    <a href="img/house-doc.png" data-fancybox="images" class="house-document__link fancybox">
+                                        <img src="img/house-doc.png" alt="" class="house-document__img">
+                                    </a>
+                                    <p class="house-document__paragraph">
+                                        Вологодская область, д. Капустино
+                                    </p>
+                                    <a href="#" class="house-document__link" download="">
+                                        <img src="img/document1.png" alt="">
+                                        <span class="house-document__mark">
+                                            PDF
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="house-document">
+                                    <a href="img/gallery/gallery.png" data-fancybox="images" class="house-document__link fancybox">
+                                        <img src="img/house-doc2.png" alt="" class="house-document__img">
+                                    </a>
+                                    <p class="house-document__paragraph">
+                                        Вологодская область, д. Капустино
+                                    </p>
+                                    <a href="#" class="house-document__link" download="">
+                                        <img src="img/document1.png" alt="">
+                                        <span class="house-document__mark">
+                                            PDF
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <a href="#" class="work-examples__video video">
+                                <iframe width="100%" height="100%"  src="https://www.youtube.com/embed/QMf05D7_N4k" allowfullscreen></iframe>
+                                <p class="video__paragraph">
+                                    Вологодская область, село Устье-Кубенское
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="work-examples__gallery gallery">
+                            <a href="img/gallery/gallery.png" data-fancybox="images" class="fancybox gallery__link">
+                                <img src="img/gallery/gallery.png" alt="">
+                            </a>
+                            <a href="img/gallery/gallery1.png" data-fancybox="images" class="fancybox gallery__link">
+                                <img src="img/gallery/gallery1.png" alt="">
+                            </a>
+                            <a href="img/gallery/gallery2.png" data-fancybox="images" class="fancybox gallery__link">
+                                <img src="img/gallery/gallery2.png" alt="">
+                            </a>
+                            <a href="img/gallery/gallery3.png" data-fancybox="images" class="fancybox  gallery__link">
+                                <img src="img/gallery/gallery3.png" alt="">
+                            </a>
+                           <a href="img/gallery/gallery4.png" data-fancybox="images" class="fancybox gallery__link">
+                                <img src="img/gallery/gallery4.png" alt="">
+                            </a>
+                            <a href="img/gallery/gallery5.png" data-fancybox="images" class="fancybox gallery__link">
+                                <img src="img/gallery/gallery5.png" alt="">
+                            </a>
+                            <a href="img/gallery/gallery6.png" data-fancybox="images" class="fancybox gallery__link">
+                                <img src="img/gallery/gallery6.png" alt="">
+                            </a>
+                            <a href="img/gallery/gallery7.png" data-fancybox="images" class="fancybox gallery__link">
+                                <img src="img/gallery/gallery7.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <div class="footer__container container">
+                        <div class="footer__main-footer main-footer">
+                            <div class="main-footer__wrapper">
+                                <ul class="main-footer__main-list main-list">
+                                    <li class="main-list__item">
+                                        <h4 class="main-list__title title">
+                                            Производство
+                                        </h4>
+                                    </li>
+
+                                    <li class="main-list__item">
+                                        Рубленное бревно
+                                    </li>
+
+                                    <li class="main-list__item">
+                                        Оцилиндрованное бревно
+                                    </li>
+
+                                    <li class="main-list__item">
+                                        Дома из бруса
+                                    </li>
+
+                                    <li class="main-list__item">
+                                        Дома из оцилиндрованного бревна
+                                    </li>
+
+                                    <li class="main-list__item">
+                                        Дома из клееного бруса
+                                    </li>
+                                </ul>
+
+                                <ul class="main-footer__main-list main-list">
+                                    <li class="main-list__item">
+                                        <h4 class="main-list__title title">
+                                            Проект
+                                        </h4>
+                                    </li>
+
+                                    <li class="main-list__item">
+                                        Дома
+                                    </li>
+
+                                    <li class="main-list__item">
+                                        Бани
+                                    </li>
+
+                                    <li class="main-list__item">
+                                        Малые формы
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="main-footer__wrapper2">
+                                <div class="main-footer__small-box-info small-box-info">
+                                    <svg width="20" height="22" role="img" class="small-box-info__iconLocation">
+                                        <use xlink:href="img/sprite.svg#icon-location"></use>
+                                    </svg>
+                                    <div class="small-box-info__wrapper">
+                                        <h4 class="small-box-info__title title">
+                                            Производство:
+                                        </h4>
+                                        <p class="small-box-info__paragraph">
+                                            162220 Вологодская область,
+                                        </p>
+                                        <p class="small-box-info__paragraph small-box-info__paragraph--color">
+                                            Сямжа с. ул. Парковая д. 6
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="main-footer__small-box-info small-box-info">
+                                    <svg width="20" height="22" role="img" class="small-box-info__iconLocation">
+                                        <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <div class="small-box-info__wrapper">
+                                        <h4 class="small-box-info__title title">
+                                            <a href="tel:8 800 2000-679">
+                                                8 800 2000-679
+                                            </a>
+                                        </h4>
+                                        <p class="small-box-info__paragraph">
+                                            Ежедневно с 08:00 до 23:00
+                                        </p>
+                                        <a href="mailto:srub@nord-srub.ru" class="small-box-info__paragraph small-box-info__paragraph--color">
+                                            srub@nord-srub.ru
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="main-footer__small-box-info small-box-info">
+                                    <div class="small-box-info__wrapper small-box-info__wrapper--gap">
+                                        <h4 class="small-box-info__title title">
+                                            Офис:
+                                        </h4>
+                                        <p class="small-box-info__paragraph">
+                                            160000 Вологодская область,
+                                        </p>
+                                        <p class="small-box-info__paragraph small-box-info__paragraph--color">
+                                            г. Вологда . ул. Мира 8
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="main-footer__box-network">
+                                    <a href="">
+                                        <svg width="24" height="14" role="img">
+                                            <use xlink:href="img/sprite.svg#icon-vk2"></use>
+                                        </svg>
+                                    </a>
+
+                                    <a href="">
+                                        <svg width="17" height="17" role="img">
+                                            <use xlink:href="img/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+
+                                    <a href="">
+                                        <svg width="24" height="14" role="img">
+                                            <use xlink:href="img/sprite.svg#icon-facebook2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="footer__minor-footer minor-footer">
+                            <div class="minor-footer__wrapper">
+                                <p class="minor-footer__paragraph">
+                                    © СК "Вологодский плотник" © 2010 — 2017
+                                    Все права защищены.
+                                </p>
+                            </div>
+
+                            <div class="minor-footer__wrapper2">
+                                <a href="https://www.synapse-studio.ru/"  target="_blank" class="logo-sinaps">
+                                    <svg width="74" height="23" role="img">
+                                        <use xlink:href="img/sprite.svg#logo-sinaps"></use>
+                                        <span class="logo-sinaps__text">
+                                        — Создание сайта
+                                    </span>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+<!--        popups-->
+        <div style="display:none;">
+            <div class="box-modal box-modal__wrapper" id="popup-call">
+                <div class="box-modal_close arcticmodal-close">
+                    <svg width="40" height="40" role="img" class="box-modal__close">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </div>
+               <div class="box-modal___main-popup main-popup">
+                    <h2 class="main-popup__title title">
+                        Оставьте свой номер
+                    </h2>
+                   <p class="main-popup__paragraph">
+                       Наш менеджер Вам перезвонит
+                   </p>
+                   <form action="" class="main-popup__form form">
+                        <div class="form__wrapper">
+                            <span class="form__number"> +7 </span>
+                            <input class="input" type="tell" required>
+                        </div>
+
+                       <button type="submit" onclick="return false" class="form__main-btn main-btn main-btn--background">
+                           Заказать звонок
+                       </button>
+                   </form>
+               </div>
+            </div>
+        </div>
+    </body>
+
+
+<!--Jquery-->
+    <script src="js/jquery.js"></script>
+<!--Slider-->
+    <script src="js/flickity.pkgd.min.js"></script>
+<!--Popup -->
+    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<!--fancybox-->
+    <script src="js/jquery.fancybox.min.js"></script>
+<!--Main-->
+    <script src="js/main.js"></script>
+</html>
